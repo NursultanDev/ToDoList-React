@@ -1,0 +1,12 @@
+.list__text_st {
+  font-size: 28px;
+  color: cadetblue;
+  text-decoration: line-through;
+  line-height: 24px;
+}
+
+.list__text {
+  font-size: 28px;
+  color: cadetblue;
+  line-height: 24px;
+}
