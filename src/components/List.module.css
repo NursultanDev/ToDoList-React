@@ -10,3 +10,17 @@
   color: cadetblue;
   line-height: 24px;
 }
+
+@media (max-width:535px) {
+  .list__text, 
+  .list__text_st {
+    width: 250px;
+  }
+}
+
+@media (max-width:420px) {
+  .list__text, 
+  .list__text_st {
+    width: 180px;
+  }
+}

@@ -44,9 +44,11 @@ function ToDo()
     }
 
     function onDelete(id) {
-      setTodos(prevTodos => {
-        return prevTodos.filter(task => task.id !== id);
-      })
+      if(confirm('ARE YOU SURE MAN?')) {
+        setTodos(prevTodos => {
+          return prevTodos.filter(task => task.id !== id);
+        })
+      }
     }
 
 
@@ -69,7 +71,7 @@ function ToDo()
     <div className="todo-list__container">
       <Header title="GET YOUR STUFF DONE"></Header>
       <InputBar  addTodo={addTodo}></InputBar>
-        <ul>
+        <ul className="list">
             {
                 todos.map(item => (
                     <List 
